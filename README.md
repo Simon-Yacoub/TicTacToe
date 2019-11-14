@@ -1,2 +1,3 @@
 # TicTacToe
-A bad implementation of text based TicTacToe
+A GUI-based version of TicTacToe that implements the Model, View, Controller pattern.
+
