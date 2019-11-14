@@ -2,3 +2,9 @@
 /Command.class
 /Game.class
 /Tick.class
+/TTTGraphics.class
+/TTTView.class
+/TTTModel.class
+/TTTEvent.class
+/TTTListener.class
+/TTTButton.class
