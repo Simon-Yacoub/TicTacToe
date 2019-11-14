@@ -128,7 +128,7 @@ public class TTTModel {
 	/**
 	 * Notifies the listeners a move has been made
 	 * by creating a new TTTEvent with the location (x,y)
-	 * and calling listener.handleTTTEvent for all listeners
+	 * and calling listener.handleTTTEvent() for all listeners
 	 * 
 	 * @param x The x value of the location 
 	 * @param y The y value of the location
