@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * TTTModel is a model of a TicTacToe board.
  * It's responsibilities are to maintain state of the board,
- * update the board via play() and notify it's listeners whenever
+ * update the board via play() and notify it's listeners when
  * a change to the board is made.
  * @author Simon Yacoub
  * @version 2.0
