@@ -43,6 +43,7 @@ public class TTTView extends JFrame implements TTTListener {
 		for (int i = 0; i < model.BOARD_SIZE; i++) {
 			for (int j = 0; j < model.BOARD_SIZE; j++) {
 				TTTButton b = new TTTButton(i, j, "");
+				b.setIcon(new ImageIcon("Resources/Blank.png"));
 				buttons[i][j] = b;
 				this.add(b);
 				b.addActionListener(this);
@@ -70,12 +71,16 @@ public class TTTView extends JFrame implements TTTListener {
 	 */
 	private void win() {
 		//disable buttons
-		for (int i = 0; i < model.BOARD_SIZE; i++) {
-			for (int j = 0; j < model.BOARD_SIZE; j++) {
-				buttons[i][j].setEnabled(false);
-			}
-		}
-		 int option = JOptionPane.showConfirmDialog(this, "Game Over!\nWould you like to play again?");
+//		for (int i = 0; i < model.BOARD_SIZE; i++) {
+//			for (int j = 0; j < model.BOARD_SIZE; j++) {
+//				buttons[i][j].setEnabled(false);
+//			}
+//		}
+		
+		String victoryMessage = model.getPlayerXTurn() ? "Player X Wins!\nWould you like to play again?" : "Player O Wins!\nWould you like to play again?";
+		
+		//Game Over popup
+		int option = JOptionPane.showConfirmDialog(this, victoryMessage);
 		 switch(option) {
 		 case 0: reset();
 		 break;
@@ -120,9 +125,9 @@ public class TTTView extends JFrame implements TTTListener {
 	 */
 	public void updateButton(int x, int y, boolean turn) {
 		if(turn) {
-			buttons[x][y].setText("X");
+			buttons[x][y].setIcon(new ImageIcon("Resources/X.png"));
 		}else {
-			buttons[x][y].setText("O");
+			buttons[x][y].setIcon(new ImageIcon("Resources/O.png"));
 		}
 	}
 
