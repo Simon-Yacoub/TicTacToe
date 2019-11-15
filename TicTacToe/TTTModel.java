@@ -23,7 +23,7 @@ public class TTTModel {
 	 */
 	public TTTModel() {
 		playerXTurn = true;
-		tttModelListeners = new ArrayList();
+		tttModelListeners = new ArrayList<TTTListener>();
 
 		// initialize grid of chars
 		grid = new char[BOARD_SIZE][BOARD_SIZE];
