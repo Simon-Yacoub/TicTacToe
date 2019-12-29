@@ -11,12 +11,11 @@ public class TTTEvent extends EventObject{
 	private boolean turn;
 	private boolean isGameWon;
 	
-	public TTTEvent(TTTModel source, int x, int y, boolean turn, boolean isGameWon) {
+	public TTTEvent(TTTModel source, int x, int y, boolean turn) {
 		super(source);
 		this.x = x;
 		this.y = y;
 		this.turn = turn;
-		this.isGameWon = isGameWon;
 	}
 
 	public int getX() {
@@ -29,10 +28,6 @@ public class TTTEvent extends EventObject{
 
 	public boolean getTurn() {
 		return turn;
-	}
-
-	public boolean isGameWon() {
-		return isGameWon;
 	}
 
 }
