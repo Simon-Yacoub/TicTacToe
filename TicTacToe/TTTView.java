@@ -6,12 +6,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.imageio.ImageIO;
-import javax.rmi.CORBA.Tie;
 import javax.swing.*;
 
 /**
  * TTTView is a GUI-based, visual representation of a TTTModel. It's
- * responsibilities are to display a TicTacToe window that has a playable
+ * responsibility is to display a TicTacToe window that has a playable
  * TicTacToe board.
  * 
  * @author Simon Yacoub
